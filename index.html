@@ -542,6 +542,8 @@ footer{padding-block:32px 48px; border-top:1px solid var(--rule); font-family:va
   }
   function selectText(node){ var rg=document.createRange(); rg.selectNodeContents(node); var s=window.getSelection(); s.removeAllRanges(); s.addRange(rg); }
   if(C.email) row('Email', C.email, 'mailto:'+C.email, true);
+  if(C.phone) row('Phone', C.phone, 'tel:'+C.phone.replace(/[^+\d]/g,''), true);
+  if(C.whatsapp) row('WhatsApp', 'Message me', 'https://wa.me/'+C.whatsapp.replace(/\D/g,''), false);
   if(C.linkedin) row('LinkedIn', C.linkedin.replace(/^https?:\/\/(www\.)?/,''), C.linkedin, false);
   if(C.github) row('GitHub', C.github.replace(/^https?:\/\//,''), C.github, false);
   if(C.cvLink) row('CV', 'Download PDF', C.cvLink, false);
