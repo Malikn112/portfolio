@@ -37,8 +37,10 @@ window.SITE = {
   },
 
   contact: {
+  phone: "+966 57 9236811",
+   whatsapp: "+966 57 9236811",
     email: "naveedmalik5258@gmail.com",          // e.g. "you@example.com"
-    linkedin: "",       // e.g. "https://www.linkedin.com/in/your-name"
+    linkedin: "www.linkedin.com/in/malik-naveed-ai",       // e.g. "https://www.linkedin.com/in/your-name"
     github: "https://github.com/Malikn112",
     cvLink: ""          // optional link to your CV PDF, e.g. "images/Malik-Naveed-CV.pdf"
   },
